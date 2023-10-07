@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyFirstApp.Pages.SigninPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="SigninPage">
+
+
+
+    <Grid
+        BackgroundColor="Green"
+        ColumnDefinitions="*"
+        RowDefinitions="*">
+
+        <VerticalStackLayout HorizontalOptions="Center">
+            <Label
+                FontSize="25"
+                HorizontalOptions="Center"
+                Text="Welcome" />
+
+            <Label
+                FontSize="9"
+                HorizontalOptions="Center"
+                Text="Maecenas in lobortis massa. Donec vitae sadales nisi," />
+
+
+            <Frame Margin="20" VerticalOptions="End">
+                <Grid RowDefinitions="*,*">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Grid RowDefinitions="*,*,*,*,*,*,*" VerticalOptions="Center">
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="14"
+                                HorizontalOptions="Center"
+                                Text="Login With" />
+                            <VerticalStackLayout Grid.Row="7">
+                                <HorizontalStackLayout Margin="15" HorizontalOptions="Center">
+
+                                    <Border>
+                                        <Image
+                                            Margin="8"
+                                            HeightRequest="40"
+                                            Source="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/512/apple-512.png"
+                                            WidthRequest="40" />
+                                    </Border>
+                                    <Border>
+                                        <Image
+                                            Margin="8"
+                                            HeightRequest="40"
+                                            Source="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-facebook-512.png"
+                                            WidthRequest="40" />
+                                    </Border>
+                                    <Border>
+                                        <Image
+                                            Margin="8"
+                                            HeightRequest="40"
+                                            Source="https://cdn3.iconfinder.com/data/icons/picons-social/57/03-twitter-512.png"
+                                            WidthRequest="40" />
+                                    </Border>
+
+                                </HorizontalStackLayout>
+                                <HorizontalStackLayout>
+                                    <Line
+                                        BackgroundColor="Black"
+                                        HeightRequest="1"
+                                        HorizontalOptions="Start"
+                                        WidthRequest="125.5" />
+
+                                    <Label HorizontalOptions="Center" Text="or" />
+                                    <Line
+                                        BackgroundColor="Black"
+                                        HeightRequest="1"
+                                        HorizontalOptions="End"
+                                        WidthRequest="125.5" />
+                                </HorizontalStackLayout>
+                                <VerticalStackLayout>
+                                    <VerticalStackLayout>
+                                        <Label
+                                            FontSize="10"
+                                            HorizontalOptions="Start"
+                                            Text="Email address" />
+                                        <Entry Placeholder="youremail@gmail.com" />
+                                    </VerticalStackLayout>
+                                    <VerticalStackLayout>
+                                        <Label FontSize="10" Text="Password" />
+                                        <Entry IsPassword="True" Placeholder="yourpassword" />
+                                    </VerticalStackLayout>
+                                </VerticalStackLayout>
+                                <VerticalStackLayout>
+                                    <Grid>
+                                        <HorizontalStackLayout>
+
+                                            <Switch
+                                                Margin="0,20,20,30"
+                                                HorizontalOptions="Start"
+                                                OnColor="Green"
+                                                ThumbColor="Black" />
+                                            <HorizontalStackLayout Margin="0,30,0,30">
+                                                <Label Text="Remember me" />
+                                            </HorizontalStackLayout>
+                                        </HorizontalStackLayout>
+                                    </Grid>
+
+
+                                    <VerticalStackLayout>
+                                        <Button Text="Login" />
+                                    </VerticalStackLayout>
+                                    <VerticalStackLayout>
+                                        <HorizontalStackLayout Margin="10" HorizontalOptions="Center">
+                                            <Label FontSize="9" Text="Don't have account?" />
+                                            <Label
+                                                FontSize="9"
+                                                Text="Create Account"
+                                                TextColor="green" />
+
+                                        </HorizontalStackLayout>
+                                    </VerticalStackLayout>
+                                </VerticalStackLayout>
+                            </VerticalStackLayout>
+
+                        </Grid>
+                    </VerticalStackLayout>
+
+
+
+
+                </Grid>
+
+
+
+            </Frame>
+        </VerticalStackLayout>
+
+
+
+
+
+
+
+    </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<Grid RowDefinitions="*,auto,Auto,auto">
+        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="End">
+            <Label
+                FontSize="30"
+                HorizontalOptions="Center"
+                Text="Sign In" />
+            <Label
+                FontSize="15"
+                HorizontalOptions="Center"
+                Text="Welcome" />
+
+        </VerticalStackLayout>
+
+        <Frame
+            Grid.Row="1"
+            Margin="20,20,20,0"
+            BackgroundColor="Gray"
+            CornerRadius="35"
+            VerticalOptions="Center">
+
+            <VerticalStackLayout Spacing="20">
+                <Grid ColumnDefinitions="auto,*">
+                    <Image
+                        HeightRequest="30"
+                        Source="https://cdn0.iconfinder.com/data/icons/multimedia-63/512/Male_user_avatar-512.png"
+                        WidthRequest="20" />
+                    <Entry
+                        x:Name="EntryEmail"
+                        Grid.Column="1"
+                        Placeholder="Email:"
+                        PlaceholderColor="Black" />
+                </Grid>
+
+                <Grid ColumnDefinitions="auto,*">
+                    <Image
+                        HeightRequest="20"
+                        Source="https://cdn2.iconfinder.com/data/icons/rpg-fantasy-game-basic-ui/512/item_game_ui_key_lock_security_safe_unlock-512.png"
+                        WidthRequest="20" />
+                    <Entry
+                        x:Name="EntryPassword"
+                        Grid.Column="1"
+                        Placeholder="Password:"
+                        PlaceholderColor="Black" />
+                </Grid>
+
+                <Button
+                    x:Name="Signin"
+                    Margin="10"
+                    BackgroundColor="DarkCyan"
+                    Text="Sign in" />
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+        <HorizontalStackLayout
+            Grid.Row="2"
+            Margin="0,50,0,0"
+            HorizontalOptions="Center">
+            <Line
+                BackgroundColor="Black"
+                HeightRequest="1"
+                WidthRequest="100" />
+
+
+            <Label Text="or" VerticalOptions="Center" />
+
+
+            <Line
+                BackgroundColor="Black"
+                HeightRequest="1"
+                VerticalOptions="Center"
+                WidthRequest="100" />
+        </HorizontalStackLayout>
+
+        <VerticalStackLayout
+            Grid.Row="3"
+            Margin="50"
+            VerticalOptions="End">
+            <Button BackgroundColor="DarkCyan" Text="Register" />
+        </VerticalStackLayout>
+
+    </Grid>-->
+</ContentPage>

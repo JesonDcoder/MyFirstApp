@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MyFirstApp.Pages.Signup"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Signup"
+    BackgroundColor="#5B0888">
+    <Grid
+        Margin="20,0,-30,0"
+        RowDefinitions="Auto,*,Auto"
+        VerticalOptions="End">
+        <Frame
+            Grid.Row="0"
+            Margin="-60,-590,300,0"
+            BackgroundColor="#713ABE"
+            BorderColor="Transparent"
+            CornerRadius="100"
+            HasShadow="True"
+            HeightRequest="200" />
+
+        <Frame
+            Margin="20"
+            BackgroundColor="#713ABE"
+            VerticalOptions="Center">
+            <VerticalStackLayout Spacing="10">
+
+                <Label
+                    FontSize="20"
+                    HorizontalOptions="Start"
+                    Text="Sign Up"
+                    VerticalOptions="Center" />
+
+                <Entry BackgroundColor="{StaticResource EntryBackgroundColor}" Placeholder="Fullname" />
+                <Entry BackgroundColor="{StaticResource EntryBackgroundColor}" Placeholder="Mobile #" />
+                <Entry BackgroundColor="{StaticResource EntryBackgroundColor}" Placeholder="Email" />
+                <Entry
+                    BackgroundColor="{StaticResource EntryBackgroundColor}"
+                    IsPassword="True"
+                    Placeholder="Password" />
+                <Entry
+                    BackgroundColor="{StaticResource EntryBackgroundColor}"
+                    IsPassword="True"
+                    Placeholder="Confirm Password" />
+                <Button Text="Register" />
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+        <Frame
+            Grid.Row="2"
+            Margin="300,0,-60,-40"
+            BackgroundColor="#713ABE"
+            BorderColor="Transparent"
+            CornerRadius="100"
+            HasShadow="True"
+            HeightRequest="200" />
+
+
+
+    </Grid>
+</ContentPage>

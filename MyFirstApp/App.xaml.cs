@@ -1,4 +1,6 @@
-﻿namespace MyFirstApp
+﻿using MyFirstApp.Pages;
+
+namespace MyFirstApp
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new Signup();
         }
     }
 }

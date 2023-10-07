@@ -1,41 +1,243 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstApp.MainPage">
+<ContentPage
+    x:Class="MyFirstApp.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--<ScrollView>
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+        <VerticalStackLayout HorizontalOptions="Center">
+            <HorizontalStackLayout>
+                <Image Source="https://cdn1.iconfinder.com/data/icons/avatar-characters-1/64/Sans-512.png" />
+
+                <Image Source="https://cdn2.iconfinder.com/data/icons/avatar-and-emotion-5/512/avatar_15-512.png" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Image Source="https://cdn0.iconfinder.com/data/icons/emojis-flat-pixel-perfect-w-skin-tone-2/64/c3_emoji-emoticon-face-anime-surprised-shocked-512.png" />
+
+                <Image Source="https://cdn2.iconfinder.com/data/icons/avatar-and-emotion-5/512/avatar_2-512.png" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Image Source="https://cdn2.iconfinder.com/data/icons/dragonball-z-flat/48/Cartoons__Anime_Dragonball_Artboard_13-512.png" />
+
+                <Image Source="https://cdn0.iconfinder.com/data/icons/hobbies-aqua-vol-2/500/Watching_Anime-512.png" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+    </ScrollView>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<ScrollView >
+        <VerticalStackLayout>
+            <Image Aspect="AspectFill" Source="https://cdn1.iconfinder.com/data/icons/avatar-characters-1/64/Sans-512.png"/>
+            <Image Aspect="AspectFill" Source="https://cdn1.iconfinder.com/data/icons/avatar-characters-1/64/Sans-512.png"/>
+            <Image Aspect="AspectFill" Source="https://cdn1.iconfinder.com/data/icons/avatar-characters-1/64/Sans-512.png"/>
+            <Image Aspect="AspectFill" Source="https://cdn1.iconfinder.com/data/icons/avatar-characters-1/64/Sans-512.png"/>
 
         </VerticalStackLayout>
-    </ScrollView>
+    </ScrollView>-->
+
+
+    <!--<Grid BackgroundColor="AliceBlue" ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*,*,*">
+
+
+        <Button
+                 x:Name="btn1"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 BackgroundColor="red"/>
+
+
+        <Button
+                 x:Name="btn2"
+                 Grid.Row="0"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="3"
+                 BackgroundColor="green"/>
+
+        <Button
+                 x:Name="btn3"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="2"
+                BackgroundColor="Orange"/>
+
+
+        <Button
+          x:Name="btn4"
+          Grid.Row="1"
+          Grid.Column="2"
+
+         BackgroundColor="red"/>
+
+        <Button
+              x:Name="btn5"
+              Grid.Row="1"
+               Grid.Column="3"
+
+             BackgroundColor="blue"/>
+
+
+
+        <Button
+              x:Name="btn6"
+              Grid.Row="2"
+              Grid.Column="0"
+
+              BackgroundColor="blue"/>
+
+
+        <Button
+              x:Name="btn7"
+              Grid.Row="2"
+              Grid.Column="1"
+
+              BackgroundColor="green"/>
+
+
+        <Button
+              x:Name="btn8"
+              Grid.Row="2"
+              Grid.Column="2"
+              Grid.ColumnSpan="2"
+              BackgroundColor="red"/>
+
+
+        <Button
+              x:Name="btn9"
+              Grid.Row="3"
+              Grid.Column="0"
+              Grid.ColumnSpan="4"
+              BackgroundColor="Yellow"/>
+
+        <Button
+              x:Name="btn10"
+              Grid.Row="4"
+              Grid.Column="0"
+
+              BackgroundColor="red"/>
+
+        <Button
+              x:Name="btn11"
+              Grid.Row="4"
+              Grid.Column="1"
+
+              BackgroundColor="blue"/>
+
+        <Button
+              x:Name="btn12"
+              Grid.Row="4"
+              Grid.Column="2"
+
+              BackgroundColor="green"/>
+
+
+        <Button
+              x:Name="btn13"
+              Grid.Row="4"
+              Grid.Column="2"
+
+             BackgroundColor="blue"/>
+
+        <Button
+        x:Name="btn14"
+        Grid.Row="4"
+        Grid.Column="3"
+
+       BackgroundColor="green"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>-->
+
+    <!--<Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*">
+
+        <Button Text="1" Grid.Row="0" Grid.Column="0" x:Name="btn1" Clicked="btn1_Clicked"/>
+        <Button Text="9" Grid.Row="0" Grid.Column="1" x:Name="btn9"  Clicked="btn9_Clicked" />
+        <Button Text="8" Grid.Row="1" Grid.Column="0" x:Name="btn8"  Clicked="btn8_Clicked"/>
+        <Button Text="10" Grid.Row="1" Grid.Column="1" x:Name="btn10" Clicked="btn10_Clicked"/>
+        <Button Text="7" Grid.Row="2" Grid.Column="0" x:Name="btn7"  Clicked="btn7_Clicked"/>
+        <Button Text="3" Grid.Row="2" Grid.Column="1" x:Name="btn3"  Clicked="btn3_Clicked"/>
+        <Button Text="5" Grid.Row="3" Grid.Column="0" x:Name="btn5"  Clicked="btn5_Clicked"/>
+        <Button Text="6" Grid.Row="3" Grid.Column="1" x:Name="btn6"  Clicked="btn6_Clicked"/>
+
+
+
+    </Grid>-->
+
+    <!--<Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*,*">
+        <Label Grid.Row="0" Grid.Column="3" VerticalOptions="Center" Text="20" FontSize="20" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
+
+        <Label Grid.Row="1" Grid.Column="1" VerticalOptions="Center" Text="10" FontSize="20" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
+
+        <Label Grid.Row="1" Grid.Column="2" VerticalOptions="Center" Text="17" FontSize="20" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
+
+        <Label Grid.Row="2" Grid.Column="1" VerticalOptions="Center" Text="13" FontSize="20" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
+
+        <Label Grid.Row="2" Grid.Column="3" VerticalOptions="Center" Text="55" FontSize="20" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
+
+        <Label Grid.Row="3" Grid.Column="0" VerticalOptions="Center" Text="25" FontSize="20" TextColor="Blue" BackgroundColor="AntiqueWhite"/>
+    </Grid>-->
+
 
 </ContentPage>
